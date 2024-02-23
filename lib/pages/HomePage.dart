@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title:const Text("展厅助手"),backgroundColor: Colors.blue,),
       body: buildBodyFunction(),
       bottomNavigationBar: buildBottomNavigation(),
     );
