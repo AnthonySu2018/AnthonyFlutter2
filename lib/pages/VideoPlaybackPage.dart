@@ -22,7 +22,69 @@ class VideoPlaybackPageState extends State<VideoPlaybackPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text("当前页面标识为${widget.pageIndex}"),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget>[
+        Column(
+
+          children: [
+          const Text("序厅LED大屏",style: TextStyle(fontSize: 35,fontStyle: FontStyle.italic),),
+          const Text(""),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("视频",style: TextStyle(fontSize: 25)),),
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("停止",style: TextStyle(fontSize: 25)), ),
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("拍照",style: TextStyle(fontSize: 25)), ),
+          ]),
+        ],),
+        Column(
+
+          children: [
+          const Text("历史墙投影仪",style: TextStyle(fontSize: 35,fontStyle: FontStyle.italic),),
+          const Text(""),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("视频",style: TextStyle(fontSize: 25)), ),
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("停止",style: TextStyle(fontSize: 25)), ),
+          ]),
+        ],),
+        Column(
+
+          children: [
+          const Text("英特尔中国2.0",style: TextStyle(fontSize: 35,fontStyle: FontStyle.italic),),
+          const Text(""),
+          Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: <Widget>[
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("视频",style: TextStyle(fontSize: 25)), ),
+                MaterialButton(
+                    onPressed: (){},
+                    color: Colors.blue,shape:const StadiumBorder(side:BorderSide(width: 2,color:Colors.lightBlue)),
+                    child:const Text("停止",style: TextStyle(fontSize: 25)), ),
+          ]),
+        ],),
+      ],
+
     );
   }
 

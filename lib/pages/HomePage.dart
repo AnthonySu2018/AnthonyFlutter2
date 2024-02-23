@@ -57,9 +57,9 @@ class _HomePageState extends State<HomePage> {
         ],
         type:BottomNavigationBarType.fixed,
         currentIndex: _tabIndex,
-        backgroundColor:Colors.white,
+        backgroundColor:Colors.blue,
         //fixedColor:Colors.purple,
-        selectedItemColor:Colors.blue,
+        selectedItemColor:Colors.white,
         unselectedItemColor:Colors.grey,
         iconSize:24.0,
         onTap:(index){
