@@ -1,3 +1,5 @@
+import 'package:anthonyflutter2/pages/CommentaryPage.dart';
+import 'package:anthonyflutter2/pages/VideoPlaybackPage.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -8,15 +10,18 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
+  List<Widget>bodyWidgetList=[
+    VideoPlaybackPage(0),
+    CommentaryPage(1),
+  ];
+
+
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
       appBar: AppBar(),
-      body: const Center(
-        child: Column(
-        ),
-      ),
+      body: bodyWidgetList[_tabIndex],
       bottomNavigationBar: buildBottomNavigation(),
     );
   }
