@@ -10,23 +10,27 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  List<Widget>bodyWidgetList=[
-    VideoPlaybackPage(0),
-    CommentaryPage(1),
-  ];
-
-
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
       appBar: AppBar(),
-      body: bodyWidgetList[_tabIndex],
+      body: buildBodyFunction(),
       bottomNavigationBar: buildBottomNavigation(),
     );
   }
 
   int _tabIndex = 0;
+
+  Widget buildBodyFunction(){
+    //帧布局结合透明布局
+    return Stack(children: <Widget>[
+      Opacity(opacity: _tabIndex==0?1:0,child: VideoPlaybackPage(0),),
+      Opacity(opacity: _tabIndex==1?1:0,child: CommentaryPage(1),),
+      //Opacity(opacity: _tabIndex==2?1:0,child: ScffoldHomeItemPage2(2),),
+    ],);}
+
+
   List<Icon>normalIcon=[
     const Icon(Icons.touch_app),
     const Icon(Icons.record_voice_over),
@@ -38,6 +42,7 @@ class _HomePageState extends State<HomePage> {
     "讲解词",
     //"开关机",
   ];
+
 
 
   BottomNavigationBar buildBottomNavigation(){
