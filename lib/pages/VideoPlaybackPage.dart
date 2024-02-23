@@ -68,7 +68,7 @@ class VideoPlaybackPageState extends State<VideoPlaybackPage> {
         Column(
 
           children: [
-          const Text("英特尔中国2.0",style: TextStyle(fontSize: 35,fontStyle: FontStyle.italic),),
+          const Text("intel vision",style: TextStyle(fontSize: 35,fontStyle: FontStyle.italic),),
           const Text(""),
           Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
