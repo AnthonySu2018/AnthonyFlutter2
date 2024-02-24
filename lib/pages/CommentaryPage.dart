@@ -28,14 +28,22 @@ class CommentaryPageState extends State<CommentaryPage> {
       children: [
         DropdownButton(
           items: <DropdownMenuItem<String>>[
-            DropdownMenuItem(value: "1",child: Text("Area1: 序厅",style: TextStyle(color: value=="1"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "2",child: Text("Area2: 英特尔产品技术发展历史展区",style: TextStyle(color: value=="2"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "3",child: Text("Area3: intel vision ",style: TextStyle(color: value=="3"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "4",child: Text("Area4: 裸眼3D区",style: TextStyle(color: value=="4"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "5",child: Text("Area5: 服务器生态与产品方案展区",style: TextStyle(color: value=="5"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "6",child: Text("Area6: CCG",style: TextStyle(color: value=="6"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "7",child: Text("Area7: NEX网络和边缘方案及生态区",style: TextStyle(color: value=="7"?Colors.blue:Colors.grey),),),
-            DropdownMenuItem(value: "8",child: Text("Area8: 结语",style: TextStyle(color: value=="8"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "1",child: Text("Area1: 序厅",                       style: TextStyle(color: value=="1"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "2",child: Text("Area2: 英特尔产品技术发展历史展区",     style: TextStyle(color: value=="2"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "5.1",child: Text("Area5.1: 服务器生态与产品方案展区",   style: TextStyle(color: value=="5.1"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "5.2",child: Text("Area5.2: 开放通用服务器平台(OCSP)",  style: TextStyle(color: value=="5.2"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "6.1",child: Text("Area6.1: 本土产业链合作的配套芯片",   style: TextStyle(color: value=="6.1"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "6.2",child: Text("Area6.2: 显卡（图形处理解决方案)",    style: TextStyle(color: value=="6.2"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "6.3",child: Text("Area6.3: PC生态系统（笔记本电脑）",   style: TextStyle(color: value=="6.3"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "6.4",child: Text("Area6.4: 绿色电脑理念及实践",        style: TextStyle(color: value=="6.4"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.1",child: Text("Area7.1: 超能云终端",              style: TextStyle(color: value=="7.1"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.2",child: Text("Area7.2: 会议及远程协作解决方案",    style: TextStyle(color: value=="7.2"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.4",child: Text("Area7.3: 智能交通解决方案",         style: TextStyle(color: value=="7.3"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.5",child: Text("Area7.5: 极视角计算机视觉AI计算盒",  style: TextStyle(color: value=="7.5"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.6",child: Text("Area7.6: 医疗行业解决方案",         style: TextStyle(color: value=="7.6"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.7",child: Text("Area7.7: 缺陷检测/大族/飞拍",       style: TextStyle(color: value=="7.7"?Colors.blue:Colors.grey),),),
+            DropdownMenuItem(value: "7.9",child: Text("Area7.9: 新能源汽车智能驾舱",       style: TextStyle(color: value=="7.9"?Colors.blue:Colors.grey),),),
+
           ],
           hint:const Text("提示信息"),// 当没有初始值时显示
           onChanged: (selectValue){//选中后的回调

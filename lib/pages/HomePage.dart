@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
   List<String> normalTitle = [
     "放视频",
-    "讲解词",
+    "提词器",
     //"开关机",
   ];
 
