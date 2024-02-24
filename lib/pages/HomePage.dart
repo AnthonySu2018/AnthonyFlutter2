@@ -1,4 +1,5 @@
 import 'package:anthonyflutter2/pages/CommentaryPage.dart';
+import 'package:anthonyflutter2/pages/MethodChannelPage.dart';
 import 'package:anthonyflutter2/pages/VideoPlaybackPage.dart';
 import 'package:flutter/material.dart';
 
@@ -27,20 +28,20 @@ class _HomePageState extends State<HomePage> {
     return Stack(children: <Widget>[
       Opacity(opacity: _tabIndex==0?1:0,child: VideoPlaybackPage(0),),
       Opacity(opacity: _tabIndex==1?1:0,child: CommentaryPage(1),),
-      //Opacity(opacity: _tabIndex==2?1:0,child: ScffoldHomeItemPage2(2),),
+      Opacity(opacity: _tabIndex==2?1:0,child: MethodChannelPage(2),),
     ],);}
 
 
   List<Icon>normalIcon=[
     const Icon(Icons.touch_app),
     const Icon(Icons.record_voice_over),
-    //const Icon(Icons.power_settings_new)
+    const Icon(Icons.bug_report)
   ];
 
   List<String> normalTitle = [
     "放视频",
     "提词器",
-    //"开关机",
+    "测试页",
   ];
 
 
@@ -52,8 +53,8 @@ class _HomePageState extends State<HomePage> {
               icon:normalIcon[0],label:normalTitle[0]),
           BottomNavigationBarItem(
               icon:normalIcon[1],label:normalTitle[1]),
-          //BottomNavigationBarItem(
-              //icon:normalIcon[2],label:normalTitle[2]),
+          BottomNavigationBarItem(
+              icon:normalIcon[2],label:normalTitle[2]),
         ],
         type:BottomNavigationBarType.fixed,
         currentIndex: _tabIndex,
